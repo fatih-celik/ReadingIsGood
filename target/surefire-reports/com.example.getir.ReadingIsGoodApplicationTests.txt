@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.getir.ReadingIsGoodApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.232 s - in com.example.getir.ReadingIsGoodApplicationTests

@@ -1,0 +1,719 @@
+{
+	"info": {
+		"_postman_id": "2169b51c-7f22-4b78-8621-6d5729d11707",
+		"name": "ReadingIsGood",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"title\": \"Steve Jobs Biography\",\r\n        \"authorId\": \"3\",\r\n        \"typeId\": \"2\",\r\n        \"price\": \"30\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"title\": \"Donusum\",\r\n        \"authorId\": \"5\",\r\n        \"typeId\": \"1\",\r\n        \"price\": \"10\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:58:52 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/book",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 17:59:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 17,\n        \"title\": \"Kumarbaz\",\n        \"authorId\": 1,\n        \"typeId\": 1,\n        \"price\": 33.5\n    },\n    {\n        \"id\": 18,\n        \"title\": \"Karamazov Kardesler\",\n        \"authorId\": 1,\n        \"typeId\": 1,\n        \"price\": 53.5\n    },\n    {\n        \"id\": 19,\n        \"title\": \"Java 11 Fundamentals\",\n        \"authorId\": 2,\n        \"typeId\": 3,\n        \"price\": 44.5\n    },\n    {\n        \"id\": 20,\n        \"title\": \"Steve Jobs Biography\",\n        \"authorId\": 3,\n        \"typeId\": 2,\n        \"price\": 30\n    },\n    {\n        \"id\": 21,\n        \"title\": \"Donusum\",\n        \"authorId\": 5,\n        \"typeId\": 1,\n        \"price\": 10\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/book/stock?bookId=2&quantity=45",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/book/stock?bookId=2&quantity=45",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"book",
+						"stock"
+					],
+					"query": [
+						{
+							"key": "bookId",
+							"value": "2"
+						},
+						{
+							"key": "quantity",
+							"value": "45"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/book/stock?bookId=2&quantity=45",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/book/stock?bookId=2&quantity=45",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"book",
+								"stock"
+							],
+							"query": [
+								{
+									"key": "bookId",
+									"value": "2"
+								},
+								{
+									"key": "quantity",
+									"value": "45"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:02:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/customer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:03:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jane\",\n        \"surname\": \"Doe\",\n        \"email\": \"jane_jane@example.com\",\n        \"password\": \"1234\",\n        \"address\": \"Maltepe\",\n        \"phone\": \"+9053000000\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"email\": \"John16@example.com\",\n        \"password\": \"1234\",\n        \"address\": \"Pendik\",\n        \"phone\": \"+9053000000\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Fatih\",\n        \"surname\": \"Celik\",\n        \"email\": \"fatih@example.com\",\n        \"password\": \"1234\",\n        \"address\": \"Esentepe Mah. Kartal\",\n        \"phone\": \"+905376547402\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"James\",\n        \"surname\": \"Milner\",\n        \"email\": \"jamesmilner@gmail.com\",\n        \"password\": \"AA121213\",\n        \"address\": \"Beykoz\",\n        \"phone\": \"+9045454544\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"James W.\",\n        \"surname\": \"Milner\",\n        \"email\": \"jamesmilner123@gmail.com\",\n        \"password\": \"AA121213\",\n        \"address\": \"Beykoz\",\n        \"phone\": \"+9045454547\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Ali\",\r\n        \"surname\": \"Yilmaz\",\r\n        \"email\": \"ali@example.com\",\r\n        \"password\": \"gffdgdf343\",\r\n        \"address\": \"Tuzla\",\r\n        \"phone\": \"+9053765474899\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"Ali\",\r\n        \"surname\": \"Yilmaz\",\r\n        \"email\": \"ali@example.com\",\r\n        \"password\": \"gffdgdf343\",\r\n        \"address\": \"Tuzla\",\r\n        \"phone\": \"+9053765474899\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/customer",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:09:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/customer/orders/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/orders/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"orders",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/customer/orders/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/customer/orders/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"orders",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:12:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"customerId\": 3,\n        \"orderDate\": \"2022-03-06T13:19:18.450+00:00\",\n        \"statusId\": \"1\",\n        \"price\": 33.5,\n        \"bookCount\": 1\n    },\n    {\n        \"id\": 5,\n        \"customerId\": 3,\n        \"orderDate\": \"2022-03-06T15:42:35.627+00:00\",\n        \"statusId\": \"1\",\n        \"price\": 93.5,\n        \"bookCount\": 3\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/order",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/order",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:12:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"customerId\": 1,\n        \"orderDate\": \"2022-03-06T12:57:17.661+00:00\",\n        \"statusId\": \"1\",\n        \"price\": 122.5,\n        \"bookCount\": 3\n    },\n    {\n        \"id\": 2,\n        \"customerId\": 1,\n        \"orderDate\": \"2022-03-06T13:04:45.471+00:00\",\n        \"statusId\": \"1\",\n        \"price\": 122.5,\n        \"bookCount\": 3\n    },\n    {\n        \"id\": 4,\n        \"customerId\": 3,\n        \"orderDate\": \"2022-03-06T13:19:18.450+00:00\",\n        \"statusId\": \"1\",\n        \"price\": 33.5,\n        \"bookCount\": 1\n    },\n    {\n        \"id\": 5,\n        \"customerId\": 3,\n        \"orderDate\": \"2022-03-06T15:42:35.627+00:00\",\n        \"statusId\": \"1\",\n        \"price\": 93.5,\n        \"bookCount\": 3\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/order?customerId=3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n        {\r\n        \"bookId\": \"17\",\r\n        \"quantity\": \"1\"\r\n    }\r\n    ,\r\n        {\r\n        \"bookId\": \"18\",\r\n        \"quantity\": \"1\"\r\n    }\r\n\r\n]\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order?customerId=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/order?customerId=3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n        {\r\n        \"bookId\": \"17\",\r\n        \"quantity\": \"1\"\r\n    }\r\n    ,\r\n        {\r\n        \"bookId\": \"18\",\r\n        \"quantity\": \"1\"\r\n    }\r\n\r\n]\r\n  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/order?customerId=3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"order"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:31:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/order/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/order/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/order/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/order/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"order",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:32:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"customerId\": 1,\n    \"orderDate\": \"2022-03-06T12:57:17.661+00:00\",\n    \"statusId\": \"1\",\n    \"price\": 122.5,\n    \"bookCount\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/monthly-statistics/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/monthly-statistics/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monthly-statistics",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/monthly-statistics/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/monthly-statistics/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"monthly-statistics",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 18:44:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        1,\n        2,\n        93.5,\n        3\n    ],\n    [\n        2,\n        3,\n        120.5,\n        3\n    ]\n]"
+				}
+			]
+		}
+	]
+}
